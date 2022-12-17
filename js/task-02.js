@@ -13,10 +13,12 @@ ingredients.forEach(Element => {
   const items = document.createElement("li");
   items.textContent = Element;
   items.classList.add("item");
-  list.before(items)
+  list.appendChild(items)
   console.log(items); 
 });
 
+
+console.log(list);
 
 
 
