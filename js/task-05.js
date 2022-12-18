@@ -1,8 +1,9 @@
 
+//call to the dom
 const textInput = document.querySelector('#name-input');
 const output = document.querySelector('#name-output')
 
-
+//input event
 textInput.addEventListener("change", (event) => {
     output.textContent = event.currentTarget.value;
     if (output.textContent === "") {
@@ -10,7 +11,7 @@ textInput.addEventListener("change", (event) => {
     }
 });
 
-
+//other solution
 // function setOutput() {
 //     const textInput = input.value;
 //     header.textContent = textInput;
@@ -19,6 +20,3 @@ textInput.addEventListener("change", (event) => {
 //     }
 // }
 
-
-
-console.log(output) 
