@@ -1,5 +1,4 @@
 function listCounter() {
-    const list = document.querySelector("#categories");
     const listItems = document.querySelectorAll(".item");
     console.log(`Number of categories: ${listItems.length}`);
     
