@@ -17,6 +17,8 @@ createBoxesButton.addEventListener("click", (event) => {
   if (boxCount > 0) {
     createBoxes(boxCount)
   }
+  input.focus();
+ 
 })
 
 function createBoxes(amount) {
@@ -37,17 +39,8 @@ function createBoxes(amount) {
 }
 
 destroyBoxesButton.addEventListener("click", () => {
-  const allChild = boxField.children;
-  const allBoxes = allChild.length; 
+    document.getElementById("boxes").outerHTML = "";
 
-  console.log(allChild)
-  console.log(allBoxes)
-
-  for (let i = 0; i < allBoxes; --i) {
-    const current = allChild[i]
-    current.remove();
-    
-  }
 });
 
 
