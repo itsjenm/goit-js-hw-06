@@ -50,4 +50,4 @@ gallery.insertAdjacentHTML("beforebegin", "<h2>Photo Gallery</h2>");
 
 
 
-console.log(gallery)
+// console.log(gallery)

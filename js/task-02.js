@@ -14,11 +14,11 @@ ingredients.forEach(Element => {
   items.textContent = Element;
   items.classList.add("item");
   list.appendChild(items);
-  console.log(items); 
+  // console.log(items); 
 });
 
 
-console.log(list);
+// console.log(list);
 
 
 

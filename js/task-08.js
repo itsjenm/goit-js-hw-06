@@ -12,15 +12,27 @@ function handleSubmit(event) {
 //where the field name will be the property name and the field value will be the 
 //property value. Use the elements property to access form elements
     const {
-        elements: { email, password }
+        elements: {
+            email,
+            password
+        }
     } = event.currentTarget;
-//If the form has empty fields, display alert saying that all fields must be filled in
-    if (email.value === "" || password.value === "") {
-        return alert('Please fill in all fields!');
+
+    const formData = {
+        email: email.value,
+        password: password.value,
     }
+        
+//If the form has empty fields, display alert saying that all fields must be filled in
+    if (email.value === "" ||  email.value === "") {
+        return alert('Please fill in all fields!');
+    } else if (password.value === "" || password.value === "" ) {
+        return alert("Please fill in all fields!");
+    }
+
 
 // Display the object with the entered data in the console and clear the values 
 //of the form field using the reset method. 
-    console.log(`Email: ${email.value}, Password: ${password.value}`);
+    console.log(formData);
     event.currentTarget.reset();
 }
