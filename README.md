@@ -1,4 +1,4 @@
-# Using DOM & Events
+# DOM & Events Practice Problems
 
 ## Task 1 
 
