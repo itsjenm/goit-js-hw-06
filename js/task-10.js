@@ -20,13 +20,16 @@ createBoxesButton.addEventListener("click", (event) => {
 })
 
 function createBoxes(amount) {
+
   for (let i = 0; i < amount; i++) {
     // create the box
     const box = document.createElement('div');
-    box.style.width = "30px";
-    box.style.height = "30px";
-    box.style.background = "slateblue";
+    const sizeOfBox = 30 + 10 * i;
+    box.style.width = `${sizeOfBox}px`;
+    box.style.height = `${sizeOfBox}px`;
+    box.style.background = getRandomHexColor();
     box.style.margin = "10px";
+
 
     // add to existing boxes 
     boxField.append(box)
@@ -50,7 +53,7 @@ destroyBoxesButton.addEventListener("click", () => {
 
 
 function getRandomHexColor() {
-  return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+  return `#${Math.floor(Math.random() * 16777215).toString(16).padStart(6,0)}`;
 }
 
 
