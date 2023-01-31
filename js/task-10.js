@@ -39,7 +39,7 @@ function createBoxes(amount) {
 }
 
 destroyBoxesButton.addEventListener("click", () => {
-    document.getElementById("boxes").outerHTML = "";
+    document.getElementById("boxes").innerHTML = "";
 
 });
 
